@@ -12,7 +12,7 @@ print("Files:", os.listdir())
 
 # Load dataset
 df = pd.read_csv("train.csv")
-print("Dataset Loaded ✅\n")
+print("Dataset Loaded \n")
 
 # Basic Info
 print("Shape:", df.shape)
@@ -92,4 +92,4 @@ df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
 df['Age'].fillna(df['Age'].median(), inplace=True)
 df.drop(columns=['Cabin'], inplace=True)
 
-print("\n✅ Missing values handled.")
+print("\n Missing values handled.")
